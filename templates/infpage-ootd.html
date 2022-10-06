@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OOTD ROOM - Influencers</title>
+
+	<link rel="icon" type="image/x-icon" href="img\icon2.ico">
+</head>
+
+<style>
+	body {
+
+	background-color: rgba(228,228,228,0.7);
+	width: 100%;
+	height: 100%;
+	margin:0;
+	font-family: century gothic;
+}
+
+.nav
+{
+	top: 0px;
+	position: fixed;
+	z-index: 1;
+
+	background-color: rgba(228,228,228,0.7);
+
+	width: 100%;
+
+	height: 70px;
+
+	font-size: 20px;
+
+	box-shadow: 1px 0px 1px;
+
+
+
+
+}
+
+.nav-button
+{
+	width: 70%;
+	float: left;
+	padding-top: 4px;
+
+	border-spacing: 10px;
+
+	letter-spacing: 3px;
+
+
+
+
+}
+
+.nav-button ul
+{
+
+}
+
+.nav-button li
+{
+	display: inline;
+
+
+
+
+
+
+
+
+
+}
+
+.nav-button li a
+{
+	text-decoration: none;
+
+	color: black;
+	border: 0px solid black;
+	padding: 14px 14px;
+
+}
+
+.nav-button li a:hover
+{
+	background-color: lightgray;
+}
+
+
+.nav-logo
+{
+	width: 30%;
+	float: left;
+	text-align: center;
+	font-family: century gothic;
+
+
+
+
+
+
+	letter-spacing: 3px;
+
+	text-shadow: 1px 2px gray;
+}
+
+
+#Title {
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.80);
+	width: 70%;
+	height: 45vh;
+
+	margin: auto;
+
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 200px;
+
+	box-shadow: 1px 1px 5px;
+
+
+}
+
+.titleC
+{
+	width: 90%;
+	margin: auto;
+	height: 100%;
+
+	 padding-top: 40px;
+}
+
+#title- {
+
+
+	font-size: 60px;
+	font-family: serif;
+	color: #4C4452;
+
+}
+
+.content {
+	background-color: rgba(255, 255, 255, 0.80);
+	margin: auto;
+	width: 66%;
+	margin-top: 70px;
+	font-size: 23px;
+	box-shadow: 1px 1px 5px;
+
+
+}
+
+.content .img{
+	text-align: center;
+	font-size: 30px;
+	opacity: .8;
+}
+
+.content .ifcont {
+	text-align: center;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.content .accnt {
+	list-style-type: none;
+	padding-left: 100px;
+
+}
+
+.content .links{
+	text-decoration: none;
+	color: #000000;
+}
+
+.content .par {
+	padding-left: 60px;
+
+}
+
+.content .YTvid {
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+#note {
+	background-color: rgba(255, 255, 255, 0.80);
+	box-shadow: 1px 1px 5px;
+	margin:auto;
+	width: 50%;
+	font-size: 20px;
+	text-align: center;
+	padding: 30px 30px 30px 30px;
+}
+
+
+#aud {
+	text-align: center;
+
+}
+
+
+footer {
+	text-align: center;
+}
+
+
+
+
+</style>
+
+<body>
+
+
+	<!--Header-->
+	<header>
+		
+		<div class="nav">
+		<div class="nav-button">
+			
+			<ul id="headerlist">
+
+				<li><a href="{{url_for('mainPage')}}"><small><b>HOME</b></small></a></li>
+
+				<li><a href="mailto:ORteam@gmail.com" target="_blank" title="Submit Entry"><small><b>EMAIL US</b></small></a></li>
+
+				<li><a href="{{url_for('blogPage')}}"><small><b>BLOGS</b></small></a></li>
+
+				<li><a href="{{url_for('infPage')}}" title=" Get Inspo "><small><b>INFLUENCERS</b></small></a></li>
+
+				<li><a href="#" title="log in"><small><b>LOG IN</b></small></a></li>
+			</ul>
+
+		</div>
+
+		<div class="nav-logo">
+			<h4><big>OOTD ROOM</big></h4>
+
+			
+		</div>
+		
+	</div>
+
+	</header>
+
+
+
+	<!--Page Title -->
+	<div id="Title">
+			<div class="titleC">
+
+				<br>
+			<h1><font id="title-"><big><b>OUTFIT ENTHUSIASTS</b></big></font></h1>
+			<p style="font-weight: bold;">Y O U&nbsp&nbsp C A N&nbsp&nbsp F O L L O W&nbsp&nbsp T H E M&nbsp&nbsp A N D&nbsp&nbsp G E T&nbsp&nbsp  I N S P O</p><br>
+				
+			</div>
+	</div>
+
+		<br><br><br><br>
+
+
+
+	<!--Content\Jessica Vu -->
+	<div class="content">
+
+		<br><br>
+		<p class="img"><a href="https://www.youtube.com/c/JessicaVu/featured" target="_blank" title="Go to Jessica's YT channel">
+			<img src="{{url_for('static',filename='img/jessica.png')}}" alt="Jessica Vu"><br><br>
+		</a>
+			<b>Jessica Vu</b>
+		</p>
+
+		<p class="ifcont">Jessica Viet gal also known as 'Jessica Vu' is obsessed with makeup, fashion, and video editing. In her youtube, you can find creative outfit and fashion ideas that you can see under her playlist fashion.</p><br>
+
+		<hr width="500">
+
+		<br>
+
+		<p class="par">
+			<b><small>Check out her other social medias:</small></b>
+				<ul class="accnt">
+					<li>&#10024; <b>IG</b>: 
+						<a href="https://www.instagram.com/jessyluxe/?utm_medium=copy_link&fbclid=IwAR3CMufIKdFU9Y8O6fvh90aQnhiKOfgQ2dXptSov0gH5cDuAKavbQZTsa0s" target="_blank" class="links" title="go to Jessica's IG">
+							@jessyluxe
+						</a>
+					</li>
+
+
+					<li>&#10024; <b>TIK TOK</b>: 
+						<a href="https://www.tiktok.com/@jessyluxe?_d=secCgwIARCbDRjEFSADKAESPgo8dOvcmnPF0sfUH895VkNbxz8vKkTGG9bTgL7rqNLwVQC2HR7N%2F9G5X7YY4QQK8lxW1cBpaJgiw064eOOZGgA%3D&_r=1&language=en&sec_uid=MS4wLjABAAAA4xu33W8tVN4XoYxo4uA6ci7d3PZULVt1kJPwuoyMi3kj8CiPKz5peOnEVXieWZo2&sec_user_id=MS4wLjABAAAAe3aVLyfaP4bSliJCBsE3RoYEi5OfWA_dOsLNJR_OhyQV5m9lPjsMTXAPt_jqMX22&share_app_id=1180&share_author_id=6615027376471949318&share_link_id=2d2c2e51-9cae-4b0f-bc1c-79aaa59e835e&social_sharing=v2&source=h5_t&timestamp=1646702605&u_code=d04lj6i66ch2i9&user_id=6557188654924955649&utm_campaign=client_share&utm_medium=android&utm_source=copy" target="_blank" title="Go to Jessica's Tiktok" class="links">
+							@jessyluxe
+						</a>
+					</li>
+
+					<li>&#10024; <b>TWITTER</b>: 
+						<a href="https://twitter.com/luxejessy?s=20&t=gbCn5drvrVfS4eZwbj4-Og&fbclid=IwAR1olQADcyqX5tctrmuqiT39-Kf4Zkzjb3vk5fpaIIXvXUgzfAgmFJAyJyk" target="_blank" title="Go to Jessica's Twiter" class="links">
+							@luxejessy
+						</a>
+					</li>
+
+				</ul>
+		</p> 
+		<br><br>
+
+		<p class="YTvid">
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/GdBPJet_cpA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</p>
+
+	</div>
+
+
+
+
+	<br><br>
+
+
+
+	<!--Content\Ashley Garcia -->
+	<div class="content">
+
+		<br><br>
+		<p class="img"><a href="https://www.youtube.com/channel/UCW-i_i3oMolgauNTxPc0kZQ" target="_blank" title="Go to Ashley's YT channel">
+			<img src="{{url_for('static',filename='img/ashly.png')}}" alt="Ashley Garcia"><br><br>
+		</a>
+			<b>Ashley Garcia</b>
+		</p>
+
+		<p class="ifcont">Ashley Garcia is a young influencer who creates mostly fashion, style steal and video editing. To know more about her, you can explore her videos on youtube under her popular uploads.</p><br>
+
+		<hr width="500">
+
+		<br>
+
+		<p class="par">
+			<b><small>Check out her other social medias:</small></b>
+				<ul class="accnt">
+					<li>&#10024; <b>IG</b>: 
+						<a href="https://www.instagram.com/ashleyogarcia/?utm_medium=copy_link&fbclid=IwAR1QSER_MVrv2Mn4pNKbpYzCTFiALddD7EEoIc3c8pzh0zRjk4-b4vtGFOk" target="_blank" title="Go to Ashley's IG" class="links">
+							@ashleyogarcia
+						</a>
+					</li>
+					<li>&#10024; <b>TIK TOK</b>: 
+						<a href="https://www.tiktok.com/@ashleyogarcia?_d=secCgwIARCbDRjEFSADKAESPgo8mXPjARyiD%2FMa52RmEe5%2FXv8lyYdt7dfL4lUD2OpF6%2Bxxdd%2FSqU936B5HK0XdZBZYcskuhVHetGXzU6GiGgA%3D&_r=1&language=en&sec_uid=MS4wLjABAAAA01DUq37ghJLshYQ0OY2M1RodiypSIEf49oLOg1WRZATztF5EclNzv-QzpYc3XKeN&sec_user_id=MS4wLjABAAAAe3aVLyfaP4bSliJCBsE3RoYEi5OfWA_dOsLNJR_OhyQV5m9lPjsMTXAPt_jqMX22&share_app_id=1180&share_author_id=6779080635426341894&share_link_id=d96c9923-69df-44e7-a547-8f959876744f&social_sharing=v2&source=h5_t&timestamp=1646702633&u_code=d04lj6i66ch2i9&user_id=6557188654924955649&utm_campaign=client_share&utm_medium=android&utm_source=copy" target="_blank" title="Go to Ashley's Tiktok" class="links">
+							@ashleyogarcia
+						</a>
+					</li>
+					<li>&#10024; <b>TWITTER</b>: 
+						<a href="https://twitter.com/AshleyOGarcia?s=20&t=gbCn5drvrVfS4eZwbj4-Og&fbclid=IwAR36h3ZXYoTBvV2p0oG_2susqOu_bX6RAvS-VUzRMeCnK21yVJvn781vpEY"  target="_blank" title="Go to Ashley's Twitter" class="links">
+							@ashleyogarcia
+						</a>
+					</li>
+
+				</ul>
+		</p> 
+		<br><br>
+
+		<p class="YTvid">
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/eEP_ycXf2OA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</p>
+
+	</div>
+
+
+
+
+	<br><br>
+
+
+
+	<!--Content\Rei Germar -->
+	<div class="content">
+
+		<br><br>
+		<p class="img"><a href="https://www.youtube.com/c/ReiGermar" target="_blank" title="Go to Rei's YT channel">
+			<img src="{{url_for('static',filename='img/rei.png')}}" alt="Rei Germar"><br><br>
+		</a>
+			<b>Rei Germar</b>
+		</p>
+
+		<p class="ifcont">Rei Germar is an endorser and influencer who made haul videos, try on and fashion ideas. She is very enthusiastic on what she's doing, you can visit her youtube to see more content about outfits.</p><br>
+
+		<hr width="500">
+
+		<br>
+
+		<p class="par">
+			<b><small>Check out her other social medias:</small></b>
+				<ul class="accnt">
+					<li>&#10024; <b>IG</b>: 
+						<a href="https://www.instagram.com/reigermar/?utm_medium=copy_link&fbclid=IwAR0ReL0oA02aDFbyLetUCkMy5Lw1fjkszlD36G9W9INvxaZu3nFOMDzFFSU" target="_blank" title="Go to Rei's IG" class="links">
+							@reigermar
+						</a>
+					</li>
+					<li>&#10024; <b>TIK TOK</b>: 
+						<a href="https://www.tiktok.com/@reigermar?_d=secCgwIARCbDRjEFSADKAESPgo8%2BDxAZK4tj6ofMHtcGrOoYTlQTaSTHLACLbe5Wpjx%2FGbvRwTXPDGmE0KyHfJUPBxa6nXTH5Dtc77XT1BUGgA%3D&_r=1&language=en&sec_uid=MS4wLjABAAAA-yYRHYzaP4h3sP4eyDTaG0HhbvJ6Uh7AbJflPeKOIdk&sec_user_id=MS4wLjABAAAAe3aVLyfaP4bSliJCBsE3RoYEi5OfWA_dOsLNJR_OhyQV5m9lPjsMTXAPt_jqMX22&share_app_id=1180&share_author_id=8075746&share_link_id=76480000-a31f-4d35-8e32-fcaded115def&social_sharing=v2&source=h5_t&timestamp=1646702656&u_code=d04lj6i66ch2i9&user_id=6557188654924955649&utm_campaign=client_share&utm_medium=android&utm_source=copy" target="_blank" title="Go to Rei's IG" class="links">
+							@reigermar
+						</a>
+					</li>
+					<li>&#10024; <b>TWITTER</b>: 
+						<a href="https://twitter.com/ReiGermar?s=20&t=gbCn5drvrVfS4eZwbj4-Og&fbclid=IwAR2agQ-u4beMHRrLMIG7joozkHABVJyNoDIqOq3GQEqx9lPvaxYoVV_PBcI" target="_blank" title="Go to Rei's IG" class="links">
+							@reigermar
+						</a>
+					</li>
+
+				</ul>
+		</p> 
+		<br><br>
+
+		<p class="YTvid">
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/uDhM_zqqqwc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</p>
+
+	</div>
+
+
+
+
+	<br><br>
+
+
+
+	<!--Content\Bella Raceli -->
+	<div class="content">
+
+		<br><br>
+		<p class="img"><a href="https://www.youtube.com/channel/UC0hP6i3jTz4I8x_oPfgnQow" target="_blank" title="Go to Bella's YT channel">
+			<img src="{{url_for('static',filename='img/bella.png')}}" alt="Bella Racelis"><br><br>
+		</a>
+			<b>ThatsBella</b>
+		</p>
+
+		<p class="ifcont">Bella Racelis also known as 'ThatsBella' is a young youtuber who made school vlogs, fashion, healthy routines and outfit haunt and try on haul. If you want to watch fashions and try on, you can check her videos on her youtube channel.</p><br>
+
+		<hr width="500">
+
+		<br>
+
+		<p class="par">
+			<b><small>Check out her other social medias:</small></b>
+				<ul class="accnt">
+					<li>&#10024; <b>IG</b>: 
+						<a href="https://www.instagram.com/thatsbellayt/?utm_medium=copy_link&fbclid=IwAR2j9pvfF_X43vcGE_lDqXz77PcPT4a6qsBbh9JWL7Nj1GS9OqnxddpSN1I" target="_blank" title="Go to Bella's IG" class="links">
+							@thatsbellayt
+						</a>
+					</li>
+					<li>&#10024; <b>TIK TOK</b>: 
+						<a href="https://www.tiktok.com/@thatsbellayt?_d=secCgwIARCbDRjEFSADKAESPgo8HzIhBOZ0rMXdltn99kxNMJmy1Xq4REZxkEuDSdoJhF4m%2FLmvX2aLuA7AjqTWF6Irh0%2F6MJzqjdNxaaWJGgA%3D&_r=1&language=en&sec_uid=MS4wLjABAAAAjKRXqSURYRdmhPjyuvVLh8fneWRmGRtptoKnqY8vln_-Eiet7APl72sMuQqNQFxF&sec_user_id=MS4wLjABAAAAe3aVLyfaP4bSliJCBsE3RoYEi5OfWA_dOsLNJR_OhyQV5m9lPjsMTXAPt_jqMX22&share_app_id=1180&share_author_id=6536101584358293505&share_link_id=832c3c69-913e-4ded-8f14-13a265bbe684&social_sharing=v2&source=h5_t&timestamp=1646702680&u_code=d04lj6i66ch2i9&user_id=6557188654924955649&utm_campaign=client_share&utm_medium=android&utm_source=copy" target="_blank" title="Go to Bella's Tiktok"  class="links">
+							@thatsbellayt
+						</a>	
+					</li>
+					<li>&#10024; <b>TWITTER</b>: 
+						<a href="https://twitter.com/thatsbellayt?s=20&t=gbCn5drvrVfS4eZwbj4-Og&fbclid=IwAR35wBmplIhjYwdE7lHijTI1WrSL4yYryW9qQpsp5CY6DdUJ_GUiaShSL1I" target="_blank" title="Go to Bella's Twitter" class="links">
+							@thatsbellayt
+						</a>
+					</li>
+
+				</ul>
+		</p> 
+		<br><br>
+
+		<p class="YTvid">
+
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/dYjzTYFaqkI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</p>
+
+	</div>
+
+
+
+
+
+	<br><br>
+
+
+
+	<!--Content\Ella Gatchalian -->
+	<div class="content">
+
+		<br><br>
+		<p class="img"><a href="https://www.youtube.com/c/JEORELLA" target="_blank" title="Go to Jeorella's YT channel">
+			<img src="{{url_for('static',filename='img/ella.png')}}" alt="Ella Gatchalian"><br><br>
+		</a>
+			<b>Jeorella</b>
+		</p>
+
+		<p class="ifcont">
+			Ella Gatchalian also known as 'Jeorella' is an influencer who made haul videos, and mostly fashion ideas. You can visit her youtube to see more content about outfits and fashions, she always wear streetstyle and casual.
+		</p><br>
+
+		<hr width="500">
+
+		<br>
+
+		<p class="par">
+			<b><small>Check out her other social medias:</small></b>
+				<ul class="accnt">
+					<li>&#10024; <b>IG</b>: 
+						<a href="https://www.instagram.com/jeorella__/?utm_medium=copy_link&fbclid=IwAR1ExFY1mpVVwmJeoTq013gi43Zxjt3k742i94hhXZAH3oWtHDYWIivXF24" target="_blank" title="Go to Ella's IG" class="links">
+							@jeorella_
+						</a>
+					</li>
+					<li>&#10024; <b>TIK TOK</b>: 
+						<a href="https://www.tiktok.com/@jeorella__?_d=secCgwIARCbDRjEFSADKAESPgo8KFtLq7pIV42MUV7LedNkIuge5hMqilIDi%2F2ChwXq3RZ1T5xzuRyn360yoYi%2Bf92d3rIz%2F461WxVqXzpLGgA%3D&_r=1&language=en&sec_uid=MS4wLjABAAAAALIJDn0WAqzulKrb7t9vGyqPqH2b2B5J8tg6C7mJ4UeVHUdhT8gswl_bj5lsbI0q&sec_user_id=MS4wLjABAAAAe3aVLyfaP4bSliJCBsE3RoYEi5OfWA_dOsLNJR_OhyQV5m9lPjsMTXAPt_jqMX22&share_app_id=1180&share_author_id=6842833755566326789&share_link_id=95862b76-10b4-4c9a-946d-a1df4951b06d&social_sharing=v2&source=h5_t&timestamp=1646702700&u_code=d04lj6i66ch2i9&user_id=6557188654924955649&utm_campaign=client_share&utm_medium=android&utm_source=copy" target="_blank" title="Go to Ella's TikTok" class="links">
+							@jeorella_
+						</a>
+					</li>
+					<li>&#10024; <b>TWITTER</b>: 
+						<a href="https://twitter.com/jeorella__?s=20&t=Q0Z2V_V1kGifkkjwktvN3Q&fbclid=IwAR0Z6vZE7025A8bIbeOKYsa0IwELM359eQispIBsOB4eQZ_N7YJXxBXOQc0" target="_blank" title="Go to Ella's Twitter" class="links">
+							@jeorella_
+						</a>
+					</li>
+
+				</ul>
+		</p> 
+		<br><br>
+
+		<p class="YTvid">
+
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/ccqlK1kLX0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</p>
+
+	</div>
+
+
+
+
+	<br><br><br>
+
+
+
+
+	<!--Note-->
+	<div id="note">
+		
+		<p> <b> <small>You can suggest different influencers you want to be feautured out.<br> Kindly email us your suggestions.</small></b></a></p>
+
+	</div>
+
+	<br><br>
+
+	<br><br><br><br>
+
+
+
+
+		
+	<div id="aud">
+		<audio controls autoplay>
+			<source src="audio\bgm.mp3" type="audio/mp3">
+		</audio>
+	</div>
+
+
+
+
+
+	<br><br>
+	
+
+	<footer>
+		<p><ins><b>All rights reserved 2022 &#169;<b></ins></p>
+	</footer>
+
+
+</body>
+</html>

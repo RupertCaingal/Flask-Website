@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OOTD ROOM - Blog</title>
+	<link rel="stylesheet" type="text/css" href="blog-ootd.css">
+	<link rel="icon" type="image/x-icon" href="img\icon2.ico">
+</head>
+
+
+<style>
+	body {
+
+	background-color: rgba(228,228,228,0.7);
+	width: 100%;
+	height: 100%;
+	font-family: century gothic;
+	text-align: center;
+}
+
+.nav
+{
+	top: 0px;
+	position: fixed;
+	z-index: 1;
+
+	background-color: rgba(228,228,228,0.7);
+
+	width: 100%;
+
+	height: 70px;
+
+	font-size: 20px;
+
+	box-shadow: 1px 0px 1px;
+
+
+
+
+
+}
+
+.nav-button
+{
+	width: 70%;
+	float: left;
+	padding-top: 4px;
+
+	border-spacing: 10px;
+
+	letter-spacing: 3px;
+	margin-left:0;
+
+
+
+
+}
+
+.nav-button ul
+{
+
+}
+
+.nav-button li
+{
+	display: inline;
+
+
+
+
+
+
+
+
+
+}
+
+.nav-button li a
+{
+	text-decoration: none;
+
+	color: black;
+	border: 0px solid black;
+	padding: 14px 14px;
+
+}
+
+.nav-button li a:hover
+{
+	background-color: lightgray;
+}
+
+
+.nav-logo
+{
+	width: 30%;
+	float: left;
+	text-align: center;
+	font-family: century gothic;
+
+
+
+
+
+
+	letter-spacing: 3px;
+
+	text-shadow: 1px 2px gray;
+}
+.content {
+
+
+	padding: 20px 50px 20px 50px;
+	background-color: rgba(255, 255, 255, 0.80);
+	margin: auto;
+	width:53%;
+	margin-top: 150px;
+	font-size: 23px;
+	box-shadow: 1px 1px 5px;
+
+}
+
+.content #btitle {
+	font-family: serif;
+}
+
+.content .par {
+	text-align: left;
+}
+
+.content .vid {
+	text-align: center;
+}
+
+
+
+.content table {
+	background-color: beige;
+	margin-left: 30px;
+
+}
+
+.content table, th, td {
+	border: 2px solid #000000;
+	border-collapse: collapse;
+
+}
+
+
+.content th,td{
+	padding: 20px;
+}
+
+
+</style>
+
+
+
+<body>
+
+
+
+	<!--Header-->
+	<header>
+		
+	<div class="nav">
+		<div class="nav-button">
+			
+			<ul id="headerlist">
+
+				<li><a href="{{url_for('mainPage')}}"><small><b>HOME</b></small></a></li>
+
+				<li><a href="mailto:ORteam@gmail.com" target="_blank" title="Submit Entry"><small><b>EMAIL US</b></small></a></li>
+
+				<li><a href="{{url_for('blogPage')}}"><small><b>BLOGS</b></small></a></li>
+
+				<li><a href="{{url_for('infPage')}}" title=" Get Inspo "><small><b>INFLUENCERS</b></small></a></li>
+
+				<li><a href="#" title="log in"><small><b>LOG IN</b></small></a></li>
+			</ul>
+
+		</div>
+
+		<div class="nav-logo">
+			<h4><big>OOTD ROOM</big></h4>
+
+			
+		</div>
+		
+	</div>
+
+	</header>
+
+
+    <!--Blog Content-->
+	<div class="content">
+
+		<h2 id=btitle><big>One click away to serve girl's dilemma</big></h2>
+		<p id="atr"><small>by OOTD ROOM</small></p>
+		<br>
+
+		<p class="par">
+			Every woman have dilema's everytime thwy want to go out and have a good-to-go outfit, so something pop on my mind way back 2020. And I made a youtube channel named <i>"OOTD ROOM"</i> Where in I create different video ideas and content prolly realated to girls who are having difficulties to find a good pair of outfit on different event or places they will go in The very first video I creted is all about streetsyle outfit which I think everyone can relate on and help with &#128516; . Plus I added tips on it which can be helpful.
+
+		</p>
+
+		<p class="vid">
+			<video width="420" height="315"  controls  class="vidb">
+ 		 		<source src="{{url_for('static',filename='vid/OOTD-vid.mp4')}}" type="video/mp4">
+ 		 	</video>
+ 		 	<br><br><br><br>
+		</p>
+
+		<p class="par">
+			After I published and posted the streetstyle ideas video, I think of another content right away. To help me decide what to serve, I made a survey on what kind of  outfit they want to, so here's the summarize result on the conducted survey through online (since I can't conduct face-to-face surveys because of the lockdown implemented and besides, all people are digitally active online) so here it is:
+			
+		</p>
+		<br>
+
+		<p id="table">
+			<table>
+				<tr>
+					<th>&#128203;</th>
+					<th>Basic Styles</th>
+					<th>Retro Outfit</th>
+					<th>Denim</th>
+					<th>Casual</th>
+					<th>Total</th>
+						
+
+				</tr>
+				<tr>
+					<th>Respondents</th>
+					<td>36</td>
+					<td>124</td>
+					<td>6</td>
+					<td>34</td>
+					<td>200</td>
+
+				</tr>	
+
+				<tr>
+					<th>Percentage</th>
+					<td>18%</td>
+					<td>62%</td>
+					<td>3%</td>
+					<td>17%</td>
+					<td>100%</td>
+				</tr>			
+
+
+
+			</table>
+
+		<br><br>
+
+
+		<p class="par">
+			A total of 200 respondents in total, and the one who garnered the most votes is retro outfit.<br><br>
+			So I made a retro outfit video ideas, you can see it below:
+		</p>
+
+	
+		<p class="vid">
+			<video width="420" height="315"  controls  class="vidb">
+ 		 		<source src="{{url_for('static',filename='vid/OOTD-vid2.mp4')}}" type="video/mp4">
+ 		 	</video>
+ 		 	
+		</p>
+
+		<p class="par">
+			This video gets a lot of positive comment such as "it's very helpful to me", "thank you for the idea" and "we need to wear retro, and this video gives me a glimpse of ideas" that makes me feel fluttered and overwhelmed &#128151;. This video is approximately 64,000 views on youtube today, and that's a lot of people to think &#128522;.
+			<br><br>
+			Ever since I started my youtube channel, there's only one goal in my mind: and that is to have one click away to serve girl's dilemma &#9989;.
+			<br><br>
+			I myself encountered struggles on picking and finding ideas what outfit to choose, and while helping myself - I realized I can help other women too &#129321; and not just me alone.
+			<br><br>
+			Outfit is very trend and important nowadays. Every occasion you're going in, every places you go to, you need an appropriate and good outfit to wear on &#128087;.
+			<br><br>
+			There are so many complex ideas around the corner through books and articles, but having a one place where you can find everything you need to is a masterpiece and stress free, that's why I named my youtube channel "OOTD ROOM" &#10024;.
+			<br><br>
+			A room for every woman, a closet you can depend on, a video ideas you can watch on, different kind of outfits it can serve on - all of this - I made it all in one. <br><br>
+
+			<b>OOTD ROOM YT CHANNEL</b> : <a href="https://www.youtube.com/channel/UCrVCSh0eNHypojZ2tf3ddYA">https://www.youtube.com/channel/UCrVCSh0eNHypojZ2tf3ddYA</a> 
+		</p>
+
+
+	</div>
+
+
+	<div class="content"> 
+		<p>You want to post your own blog? Kindly email us for your entry.</p>
+
+	</div> 
+	<br><br>
+
+	<audio controls autoplay>
+			<source src="audio\bgm.mp3" type="audio/mp3">
+	</audio>
+
+		<br><br><br><br><br><br>
+
+
+
+
+
+	<footer>
+		<br><br>
+		<p><ins><b>All rights reserved 2022 &#169;</b></ins></p>
+	</footer>
+
+
+
+
+</body>
+</html>

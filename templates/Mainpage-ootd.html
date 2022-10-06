@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OOTD ROOM</title>
+
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<style>
+
+body
+{
+	margin: 0px;
+	font-family: verdana;
+}
+
+header
+{
+	width: 100%;
+	height: 100vh;
+
+	top: 0;
+
+	position: relative;
+	display: flex;
+
+
+
+
+
+
+
+
+
+	align-items: center;
+	justify-content: center;
+
+
+
+
+}
+
+header::before {
+	content:"";
+	background-image: url({{url_for('static',filename='img/bg1.jpg')}});
+	position: absolute;
+
+	background-size: cover;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	opacity: .4;
+
+	box-shadow: 2px 0px 7px;
+
+
+}
+
+
+header .headings
+{
+	text-align: center;
+	color: black;
+	position: relative;
+
+	font-size: 30px;
+
+	margin-bottom: 30px;
+
+	font-family: century gothic;
+
+	line-height: 5px;
+}
+
+header .headings p
+{
+	border: 1px solid black;
+	font-size:20px;
+	padding: 15px;
+	border-radius: 20px;
+
+	box-shadow: 1px 1px 1px;
+
+}
+
+header .headings p a
+{
+	text-decoration: none;
+	color: black;
+
+
+}
+
+
+
+
+.nav
+{
+	top: 0px;
+	position: fixed;
+	z-index: 1;
+
+	background-color: rgba(228,228,228,0.7);
+
+	width: 100%;
+
+	height: 70px;
+
+	font-size: 20px;
+
+	box-shadow: 1px 0px 1px;
+
+
+
+
+}
+
+.nav-button
+{
+	width: 70%;
+	float: left;
+	padding-top: 4px;
+
+	border-spacing: 10px;
+
+	letter-spacing: 3px;
+
+
+
+
+}
+
+.nav-button ul
+{
+
+}
+
+.nav-button li
+{
+	display: inline;
+
+
+
+
+
+
+
+
+
+}
+
+.nav-button li a
+{
+	text-decoration: none;
+
+	color: black;
+	border: 0px solid black;
+	padding: 14px 14px;
+
+}
+
+.nav-button li a:hover
+{
+	background-color: lightgray;
+}
+
+
+
+
+
+
+
+
+
+.nav-logo
+{
+	width: 30%;
+	float: left;
+	text-align: center;
+	font-family: century gothic;
+
+
+
+
+
+
+	letter-spacing: 3px;
+
+	text-shadow: 1px 2px gray;
+}
+
+section
+{
+	background-color: rgba(228,228,228,0.7);
+	width: 100%;
+	height: 100%;
+
+	margin-top: -15px;
+}
+
+.desc
+{
+	width: 80%;
+	margin: auto;
+
+	padding-top: 200px;
+	text-align: center;
+	font-family: century gothic;
+
+	font-size: 20px;
+
+
+}
+
+.outfit
+{
+	width: 70%;
+	height: 100vh;
+
+	font-family: century gothic;
+
+	font-size: 17px;
+
+	margin: auto;
+}
+
+.content-style1
+{
+	width: 40%;
+	text-align: center;
+	float: left;
+
+	padding-top: 50px;
+
+	line-height: 60px;
+}
+
+.img-style1
+{
+	width:60%;
+	float: left;
+	text-align: right;
+
+	opacity: .7;
+
+
+}
+
+img
+{
+	box-shadow: 2px 2px 2px;
+}
+
+
+
+.content-style2
+{
+	width: 40%;
+	text-align: center;
+	float: left;
+
+	padding-top: 80px;
+
+	line-height: 60px;
+}
+
+.img-style2
+{
+	width:60%;
+	float: left;
+	text-align: left;
+
+	opacity: .7;
+}
+
+.content-style3
+{
+	width: 40%;
+	text-align: center;
+	float: left;
+
+	padding-top: 150px;
+
+	line-height: 60px;
+}
+
+.img-style3
+{
+	width:60%;
+	float: left;
+	text-align: right;
+
+	opacity: .7;
+}
+
+.content-style4
+{
+	width: 40%;
+	text-align: center;
+	float: left;
+
+	padding-top: 100px;
+
+	line-height: 60px;
+}
+
+.img-style4
+{
+	width:60%;
+	float: left;
+	text-align: left;
+
+	opacity: .7;
+}
+
+.content-style5
+{
+	width: 40%;
+	text-align: center;
+	float: left;
+
+	padding-top: 180px;
+
+	line-height: 60px;
+}
+
+.img-style5
+{
+	width:60%;
+	float: left;
+	text-align: right;
+
+	opacity: .7;
+}
+
+
+.socmed
+{
+	width: 70%;
+	margin: auto;
+	text-align: center;
+
+
+
+
+
+}
+
+.icon-list
+{
+	font-size: 30px;
+
+
+}
+
+.icon-list a
+{
+
+	text-decoration: none;
+	color: black;
+
+}
+
+.icon-list a:hover
+{
+
+	text-decoration: none;
+	color: gray;
+
+
+}
+
+footer
+{
+	background-color: rgba(228,228,228,0.7);
+
+	margin: 0px;
+	margin-top: -20px;
+
+	height: 100px;
+}
+
+
+
+
+
+
+
+</style>
+
+<body>
+	
+
+	<header>
+
+		<div class="headings">
+
+			<h1><big><b title="Outfit of the day">OOTD</b><b> ROOM</b></big></h1>
+			<h6>One Click Away to serve every girl's dilema</h6>
+			<br><br><br>
+
+
+			<p><a href="">Browse</a> </p>
+		</div>
+
+
+
+
+
+
+		
+	</header>
+
+
+	<div class="nav">
+		<div class="nav-button">
+			
+			<ul id="headerlist">
+
+				<li><a href="#"><small><b>HOME</b></small></a></li>
+
+				<li><a href="mailto:ORteam@gmail.com" target="_blank" title="Submit Entry"><small><b>EMAIL US</b></small></a></li>
+
+				<li><a href="{{url_for('blogPage')}}"><small><b>BLOGS</b></small></a></li>
+
+				<li><a href="{{url_for('infPage')}}" title=" Get Inspo "><small><b>INFLUENCERS</b></small></a></li>
+
+				<li><a href="#" title="log in"><small><b>LOG IN</b></small></a></li>
+			</ul>
+
+		</div>
+
+		<div class="nav-logo">
+			<h4><big>OOTD ROOM</big></h4>
+
+			
+		</div>
+		
+	</div>
+
+
+	<section>
+
+
+		<div class="desc">
+
+			<hr>
+			<br><br><br>
+				
+
+
+			<p>
+				<strong title="Outfit of the day">&#10075;<i>OOTD ROOM</i>&#10076;</strong> is a website for every women who wants to see, share, influence and be influence.<br>  A lot of outfit enthusiast will be shared upon and you can also share yours. 
+
+				In this modern generation,<br> outfits became a top trend worldwide up to 	this day and this site
+				 will serve as one click away <br> for every girls' dilemmas when it comes to outfit.<br>
+			</p>
+
+			<br><br><br>
+				<hr>
+			
+		</div>
+		<br><br><br>
+		<br><br><br><br><br>
+		
+		<div class="outfit">
+			<div class="content-style1">
+				<p>
+					<big><b>Denim</b></big> is usually dark blue, and mostly used to make durable work wear, like jeans and overalls. In some places, people call blue jeans denims. The word comes from a French phrase serge de Nîmes, "serge from Nîmes, France." "Serge" is a sturdy twill fabric, and Nîmes is a town where it was famously made.
+				</p>
+				
+			</div>
+
+
+			<div class ="img-style1">
+				<p ><img src="{{denim}}" width="400px" height="500px;" alt="denim outfit" >
+
+				
+
+			</div>
+	
+
+
+
+
+		 </div>
+
+
+
+		 <div class="outfit">
+		 	<div class ="img-style2">
+				<p><img src="{{ss}}" width="400px" height="500px;" alt="Street outfit" >
+
+				
+
+			</div>
+
+			<div class="content-style2">
+				<p>
+					<big><b>Streetstyle</b></big> is a comprehensive approach to fashion and includes styles which intersect, differ from mainstream fashion considerations and are based on individualism and not strictly focusing on current fashion trends.
+				</p>
+				
+			</div>
+
+		 </div>
+
+
+		 <div class="outfit">
+		 	
+
+			<div class="content-style3">
+				<p>
+					<big><b>Vintage</b></big> is a colloquialism commonly used to refer to all old styles of clothing.
+				</p>
+				
+			</div>
+
+			<div class ="img-style3">
+				<p><img src="{{vintage}}" width="400px" height="500px;" alt="vintage outfit" >
+
+			</div>
+
+		 </div>
+
+		  <div class="outfit">
+		 	
+		 	<div class ="img-style4">
+				<p><img src="{{cs}}" width="400px" height="500px;" alt="casual outfit" >
+
+			</div>
+
+
+			<div class="content-style4">
+				<p>
+					<big><b>Casual</b></big> is a dress code that is relaxed, occasional, spontaneous and suited for everyday use. Casual wear became popular in the Western world following the counterculture of the 1960s.
+				</p>
+				
+			</div>
+
+			
+		 </div>
+
+		 <div class="outfit">
+		 	
+		 	
+
+
+			<div class="content-style5">
+				<p>
+					<big><b>Chic Style</b></big> is a smart elegance and sophistication outfits 
+				</p>
+				
+			</div>
+
+			<div class ="img-style5">
+				<p><img src="{{casual}}" width="400px" height="500px;" alt="chickstyle outfit" >
+
+			</div>
+
+
+			
+		 </div>
+
+		 <br><br><br>
+
+
+
+		
+
+
+	</section>
+
+	<footer>
+		
+		  <div class="socmed">
+
+		 	<h3><small>Follow us in social media</small></h3>
+		 	<div class="icon-list">
+		 
+		 		<p><a href="#"><i class="fa fa-facebook-official "></i></a>
+		 		<a href="#"><i class="fa fa-instagram"></i></a>
+		 		<a href="#"><i class="fa fa-twitter"></i></a>
+		 		<a href="#"><i class="fa fa-youtube"></i></a>
+		 	</p>
+		 	</div>
+
+		 	
+		 </div>
+
+
+	</footer>
+	
+
+
+
+</body>
+</html>
